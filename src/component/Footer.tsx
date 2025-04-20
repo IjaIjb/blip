@@ -1,9 +1,8 @@
 import React from 'react';
-import { Facebook, Linkedin, Instagram, Twitter } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#112134] text-white py-10">
+    <footer className="bg-[/112134] text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Tagline */}
@@ -16,19 +15,19 @@ const Footer = () => {
             
             {/* Social Media Icons */}
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
+              <a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
               <img src='/assets/Link - Facebook.svg' alt='' />
 
               </a>
-              <a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
+              <a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
               <img src='/assets/in.svg' alt='' />
 
               </a>
-              <a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
+              <a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
               <img src='/assets/Link - Instagram.svg' alt='' />
 
               </a>
-              <a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
+              <a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">
               <img src='/assets/x.svg' alt='' />
 
               </a>
@@ -39,7 +38,7 @@ const Footer = () => {
           <div>
             <h4 className="text-[18px] font-[500] mb-4">Portfolio</h4>
             <ul className="space-y-2 text-sm font-light">
-              <li><a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Expertise</a></li>
+              <li><a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Expertise</a></li>
             </ul>
           </div>
           
@@ -47,8 +46,8 @@ const Footer = () => {
           <div>
             <h4 className="text-[18px] font-[500] mb-4">Work with us</h4>
             <ul className="space-y-2 text-sm font-light">
-              <li><a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Talk to us</a></li>
-              <li><a href="#" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Careers@BLIP LTD</a></li>
+              <li><a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Talk to us</a></li>
+              <li><a href="/" className="text-[18px] font-[400] hover:text-amber-500 transition-colors">Careers@BLIP LTD</a></li>
             </ul>
           </div>
           

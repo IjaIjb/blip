@@ -1,5 +1,4 @@
 import React from 'react';
-import { Clock, Target, Users } from 'lucide-react';
 
 const PartnershipSection = () => {
   return (
