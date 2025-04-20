@@ -1,0 +1,28 @@
+name: Test FTP Deployment Only
+
+on:
+  workflow_dispatch:  # Trigger manually from GitHub UI
+
+jobs:
+  ftp-deploy-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Create dummy test file
+        run: |
+          mkdir -p test-deploy
+          echo "FTP test file" > test-deploy/index.html
+
+      - name: Deploy to Shared Hosting via FTP
+        uses: Penguibird/FTP-Deploy-Action@4.2.0
+        with:
+          server: ${{ secrets.CPANEL_HOST }}
+          username: ${{ secrets.CPANEL_FTP_USERNAME }}
+          password: ${{ secrets.CPANEL_FTP_PASSWORD }}
+          server-dir: /public_html/test-deploy/
+          local-dir: ./test-deploy/
+          port: 21
+          debug: true
